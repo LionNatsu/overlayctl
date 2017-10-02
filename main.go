@@ -66,7 +66,7 @@ Example:
 	Create a simple 2-layer filesystem:
 		overlayctl mount test/lower test/upper /mnt/workdir
 	Create a 3-layer read-only filesystem:
-		overlayctl mount bottom middle top /mnt/workdir2
+		overlayctl mount -ro bottom middle top /mnt/workdir2
 	Unmount it:
 		overlayctl unmount /mnt/workdir2
 	Unmount it and delete temporary directory (test/upper.tmp):
