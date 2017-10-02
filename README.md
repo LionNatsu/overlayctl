@@ -1,5 +1,6 @@
 # overlayctl
-An overlayfs controller utils
+An overlayfs controller
+About overlayfs: https://www.kernel.org/doc/Documentation/filesystems/overlayfs.txt
 
 ## Usage
 ```
@@ -20,3 +21,5 @@ Example:
         Merge a directory from middle to bottom1 layer:
                 overlayctl merge bottom0 bottom1 middle /file/to/merge
 ```
+
+Do not use `merge` to change an online(mounted) filesystem.
